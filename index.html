@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Identifier Web App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container text-center">
+        <h1>Sound-Controlled Aliens</h1>
+        <p>Note: Play different sounds like claps, snaps, and bells to make the aliens dance.</p>
+        <button class="btn btn-warning" onclick="startClassification();">START</button>
+        <h3 id="result_label">I can hear - </h3>
+        <h4 id="result_confidence">Confidence - </h4>
+        <br>
+        <img src="aliens-01.png" id="alien1" width="280" height="280">
+        <img src="aliens-02.png" id="alien2" width="280" height="280">
+        <img src="aliens-03.png" id="alien3" width="280" height="280">
+        <img src="aliens-04.png" id="alien4" width="280" height="280">
+    </div>
+    <div class="copy_right_footer">
+        Developed by - Érica da Silva
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
